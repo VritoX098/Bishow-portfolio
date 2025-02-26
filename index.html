@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bishwow the developer</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 34);
+            color: white;
+
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(17, 17, 46);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        nav ul li {
+            list-style: none;
+
+
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(96, 96, 134);
+            font-size: 1.4rem;
+
+
+
+
+        }
+
+        .left {
+            font-size: 1.6rem;
+        }
+
+        .right {
+            font-size: 1.2rem;
+
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 115px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+
+            font-size: 3rem;
+            margin: 80px 0;
+
+        }
+
+        .RightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(112, 76, 146);
+
+        }
+        #element{
+            color: rgb(112, 76, 146);
+
+
+            
+        }
+        main hr{
+            border: 0px;
+            background: #9c97f1;
+            height :1.2px;
+            margin: 60px 84px;
+        }
+        .secondsection{
+            margin: auto;
+            max-width: 80vw;
+            height: 80vh;
+            
+        }
+        .secondsection h1{
+            font-size: 1.9rem;
+        }
+        .secondsection span{
+            color: rgb(128, 136, 136);
+            font-size: 1.2rem;
+        
+        }
+        .secondsection .box{
+            background-color: beige;
+            width:80vw;
+            height:2px;
+            margin: 56px 0;
+            display: flex;
+
+        }
+        .box ul{
+            display: flex;
+            justify-content: space-around;
+            
+            
+        }
+        .box ul li{
+            list-style: none;
+            margin: 50px;
+
+        }
+
+        
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Bishwow's Porfolio </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me </a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello World ! Myself <span class="purple"> Bishow</span>
+                <div>and I am a passionte</div>
+                <span id="element"></span>
+
+            </div>
+            <div class="RightSection">
+                <img src="developer.png" alt="Logo">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondsection"> 
+            <span class="text-gray">What I have done so far </span>
+            <h1>Proffesnional Experience and knowledge</h1>
+            <div class="box">
+                <img src="developer.png" alt="pic">
+                <Ul>
+                    <li>Python Developer</li>
+                    <li>HTML Developer</li>
+                    <li>C Developer</li>
+                </Ul>
+                
+                
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'Graphics Designer','AI and ML Programmer',],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
